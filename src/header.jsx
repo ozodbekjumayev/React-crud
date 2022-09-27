@@ -35,12 +35,18 @@ export default function Header() {
     let result = data.filter((e) => e.id !== ids);
     setData(result);
   };
+
+  const [search, setSearch] = useState("");
   return (
     <div>
       <Navbar>
         <Title>Navbar </Title>
         <InputBlock>
-          <Input placeholder="Search.." />
+          <Input
+            placeholder="Search.."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
           <SearchBtn>Search</SearchBtn>
         </InputBlock>
         <Number>Data length - {"[ " + data.length + " ]"}</Number>
