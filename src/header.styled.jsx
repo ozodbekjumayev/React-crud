@@ -65,12 +65,16 @@ const OutUsers = styled.div`
   margin: 20px auto;
   padding: 20px 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
   color: #333;
   background-color: white;
 `;
-
+const OutUsersBlock = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
 const OutUsersID = styled.div`
   font-size: 30px;
   letter-spacing: 2px;
@@ -79,6 +83,22 @@ const OutUsersUsers = styled.div`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.5px;
+`;
+const BtnDelete = styled.button`
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: red;
+  color: beige;
+  cursor: pointer;
+`;
+const BtnEdit = styled.button`
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: green;
+  color: beige;
+  cursor: pointer;
 `;
 export {
   Navbar,
@@ -92,4 +112,7 @@ export {
   OutUsers,
   OutUsersID,
   OutUsersUsers,
+  OutUsersBlock,
+  BtnDelete,
+  BtnEdit,
 };
